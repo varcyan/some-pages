@@ -1,0 +1,40 @@
+.clearfix{
+	zoom: 1;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.ico_bg{
+	background-image: url(../img/icons.png);
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+.ico1_bg{
+	background-image: url(../img/icons_1.png);
+	background-repeat: no-repeat;
+}
+.lwrap{
+	width: 890px;
+	margin-right: 10px;
+}
+.rwrap{
+	width: 290px;
+}
+a.pic_wrap{
+	overflow: hidden;
+	display: block;
+}
+.row_text{
+	font-family: "仿宋";
+}
+.sym_gt{
+	font-family: "仿宋";
+}
