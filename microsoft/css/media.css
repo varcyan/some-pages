@@ -1,0 +1,171 @@
+@media all and (max-width:1600px){
+	.content{
+		padding: 0 80px;
+	}
+}
+@media all and (max-width: 1400px){
+	.main_banner .ban_wrap{
+		/*height: 550px;*/
+	}
+	.main_banner .ban_wrap_m{
+		height: 530px;
+		background-size: auto 80%;
+	}
+}
+@media all and (max-width: 1183px){
+	body{
+		font-family: 'Microsoft Yahei';
+	}
+	.content{
+		padding: 0;
+	}
+	.header .content{
+		padding-left: 55px;
+	}
+	.header .hd_nav{
+		margin-left: 70px;
+	}
+	.main_banner .ban_wrap{
+		/*height: 510px;*/
+	}
+	.main_banner .ban_wrap_m{
+		height: 480px;
+		background-position: center top;
+		background-size: auto 100%;
+	}
+	.main_banner .ban_info{
+		padding: 60px 0;
+		position: initial;
+		background-color: #e6e6e6;
+		text-align: center;
+	}
+	.ban_info .ban_name{
+		font-size: 28px;
+	}
+	.bn_w .ban_info{
+		background-color: #333;
+	}
+	.ban_info .bt_more{
+		display: block;
+	}
+	.ban_info .ban_ico{
+		display: inline-block;
+	}
+	.ban_wrap .ban_fir{
+		display: none;
+	}
+	.ban_wrap img:nth-of-type(2){
+		display: block;
+	}
+	.main_banner .ban_ico_wrap{
+		left: 50px;
+	}
+	.footer .content{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.main_list{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.main_list .intro_item{
+		width: 50%;
+	}
+	.feedback{
+		top: 280px;
+	}
+}
+@media all and (max-width: 943px){
+	.main_banner .ban_wrap_m{
+		height: 420px;
+	}
+	.header .search{
+		display: none;
+	}
+	.hd_shot .shot_search{
+		display: block;
+	}
+	.fo_bt .fo_here, .fo_bt .fo_info{
+		float: none;
+	}
+	.fo_bt .fo_here{
+		margin-bottom: 15px;
+	}
+	.fo_bt .fo_info{
+		width: 100%;
+		text-align: left;
+	}
+}
+@media all and (max-width: 898px){
+	.main_banner .ban_wrap_m{
+		height: 380px;
+	}
+	.header .content{
+		padding-left: 20px;
+	}
+	.header .hd_nav{
+		display: none;
+	}
+	.hd_shot .shot_list{
+		display: block;
+	}
+	.fo_links .links_box{
+		width: 33.3%;
+	}
+}
+@media all and (max-width: 768px){
+	.main_banner .ban_wrap_m{
+		height: 350px;
+	}
+	.main_banner .ban_ico_wrap{
+		left: 20px;
+	}
+	.ban_info .ban_name{
+		font-size: 24px;
+	}
+	.feedback{
+		display: none;
+	}
+}
+@media all and (max-width: 554px){
+	.main_banner .ban_wrap_m{
+		height: 300px;
+	}
+	.shot_login{
+		display: none;
+	}
+	.main_banner .ban_info{
+		padding: 50px 0;
+	}
+}
+@media all and (max-width: 539px){
+	.main_banner .ban_wrap_m{
+		height: 280px;
+	}
+	.footer .content{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.main_list .intro_item{
+		width: 100%;
+		padding: 0 22px;
+		margin-bottom: 50px;
+	}
+	.fo_links .links_box{
+		display: block;
+		margin-bottom: 10px;
+		cursor: pointer;
+	}
+	.links_box .links_list{
+		display: none;
+	}
+	.fo_links{
+		padding-bottom: 8px;
+	}
+	.links_head .row{
+		display: block;
+	}
+	.links_box:hover .links_list{
+		display: block;
+	}
+}

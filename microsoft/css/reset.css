@@ -1,0 +1,24 @@
+body, h1, h3, h4{
+	margin: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: none;
+	vertical-align: top;
+}
+input{
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+h1, h3, h4, strong{
+	font-weight: normal;
+}
