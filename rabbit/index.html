@@ -1,0 +1,108 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- Grade -->
+   <div class="grade">
+     <span class="grade-num">0</span>
+      EGGS
+   </div>
+  <!-- start 开始游戏 -->
+  <section class="notify start">
+    <header>
+      <h3>Rabbit</h3>
+      <div class="info">EASTER EDITION</div>
+    </header>
+    <div class="content">
+      <!-- 这里是运动的图片 -->
+      <div class="con-img"></div>
+      <button class="con-btn">PLAY</button>
+    </div>
+    <div class="con-info">
+      <a href="">about</a>
+    </div>
+  </section>
+  <!-- Game over 游戏结束 -->
+  <section class="notify again">
+    <header>
+      <h3>Game over</h3>
+      <div class="info">You collected <span class="coll-num">71</span> EGGS!</div>
+    </header>
+    <div class="content">
+      <!-- 这里是运动的图片 -->
+      <div class="con-img">
+        <img src="imgs\rabbit-in-egg.png" alt="">
+      </div>
+      <button class="con-btn">PLAY AGAIN</button>
+    </div>
+  </section>
+  <!-- Instructions 游戏规则介绍 -->
+  <section class="notify intro">
+    <header>
+      <h3>游戏规则</h3>
+    </header>
+    <div class="content">
+      <!-- 规则介绍 -->
+      <ul class="con-intro">
+        <li class="con-item">使用<span>↑</span>和<span>↓</span>键进行移动</li>
+        <li class="con-item">尽可能收集更多的鸡蛋</li>
+        <li class="con-item">金色的鸡蛋价值更高！</li>
+        <li class="con-item">注意躲避绿色的鸡蛋！那是坏掉的</li>
+      </ul>
+      <button class="con-btn">OK, GOT IT</button>
+    </div>
+    
+  </section>
+  <!-- stage 游戏中... -->
+  <section class="stage">
+    <!-- run -->
+    <div class="go"></div>
+    <!-- over -->
+    <div class="over"></div>
+    <!-- 准备 -->
+    <div class="ready">
+      <!-- 兔子入场 -->
+      <div class="rd-rabbit"></div>
+      <!-- 倒计时 -->
+      <div class="rd-number"></div>
+      <!-- 一只上方的鸡 -->
+      <div class="rd-biddy"></div>
+    </div>
+    <!-- 游戏主舞台 -->
+    <div class="stage-scene">
+      <!-- 第一条线以及运动的树 -->
+      <div>
+        <span class="tree"></span>
+      </div>
+      <!-- 其他的赛道 -->
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <!-- 用于存放鸡蛋的容器 -->
+    <div class="stage-eggs">
+      <span class="egg-green"></span>
+      <span class="egg-white"></span>
+      <span class="egg-golden"></span>
+    </div>
+  </section>
+  <!-- loading -->
+  <div class="loading">
+    <img src="imgs/loading.gif" alt="">
+    <div class="loading_text">LOADING</div>
+  </div>
+  <script src="js/jquery-3.2.0.js"></script>
+  <script src="js/TweenMax.js"></script>
+  <script src="js/tools.js"></script>
+  <script src="js/animate.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

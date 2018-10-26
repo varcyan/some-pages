@@ -1,0 +1,297 @@
+/* global */
+html,body {
+  height: 100%;
+}
+body {
+  background-color: #ecc455;
+  overflow: hidden;
+  min-width: 1280px;
+}
+/* loading */
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-162px, -160px);
+}
+.loading .loading_text {
+  text-align: center;
+  color: #fff;
+  animation: loading 2s infinite;
+  letter-spacing: 9px;
+  text-indent: 42px;
+}
+/* notify */
+.notify {
+  position: absolute;
+  display: none;
+  top: 800px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 550px;
+  background-color: #e8b730;
+  border-radius: 2px;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 55px;
+  padding-bottom: 39px;
+  opacity: 0;
+}
+.notify header h3 {
+  font-size: 40px;
+  line-height: 98px;
+  letter-spacing: 3px;
+}
+.notify header .info {
+  line-height: 38px;
+  padding: 0 16px;
+  background-color: #dca818;
+  display: inline-block;
+  border-radius: 2px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  letter-spacing: 2px;
+}
+.notify .content {
+  position: relative;
+}
+.notify button {
+  cursor: pointer;
+}
+.notify .con-info {
+  margin-top: 18px;
+}
+.notify .con-info a {
+  font-size: 14px;
+  color: #fff;
+  line-height: 22px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
+  transition: .3s;
+}
+.notify .con-info a:hover {
+  border-bottom-color: transparent;
+}
+.notify .content .con-btn {
+  position: relative;
+  top: -2px;;
+}
+.notify .content .con-btn:hover {
+  top: 0px;
+  box-shadow: 0px 2px 0px #efcc6c;
+}
+.notify .content .con-btn {
+  outline: none !important;
+  width: 200px;
+  background: #fff;
+  border: none;
+  border-radius: 3px;
+  color: #c59616;
+  text-transform: uppercase;
+  font-family: BrandonText-Regular;
+  padding: 10px 0;
+  font-size: 16px;
+  letter-spacing: 2px;
+  box-shadow: 0px 4px 0px #f9ecc7;
+  margin: 0 auto;
+}
+.notify .content .con-img{
+   height: 234px;/*256px;*/
+}
+/* start */
+.start .content .con-img {
+  background: url(../imgs/pst-img/rabbit-stand-up.png) no-repeat 0 0;
+  width: 292px;
+  height: 234px;/*256px;*/
+  margin: 0 auto;
+  overflow: hidden;
+}
+.start .content .con-btn {
+  /*margin-top: -80px;*/
+}
+/* again */
+.again {
+  display: none;
+  z-index: 5;
+}
+.again .con-img img {
+  width: 112px;
+}
+/* intro */
+.intro .content .con-intro {
+  padding-bottom: 28px;
+}
+.intro .content .con-intro .con-item {
+  line-height: 28px;
+  padding: 15px 0;
+  font-size: 16px;
+}
+.intro .content .con-intro span {
+  font-weight: bold;
+  font-size: 22px;
+  margin: 0 10px;
+}
+/* grade */
+.grade {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -46px;
+  width: 160px;
+  background-color: #e7b427;
+  border-radius: 3px;
+  color: #fff;
+  height: 30px;
+  padding: 8px 10px;
+  line-height: 30px;
+  text-align: center;
+}
+.grade:before, .grade:after{
+  content: '';
+  position: absolute;
+  top: -70px;
+  width: 3px;
+  height: 70px;
+  background-color: #fff;
+}
+.grade::before {
+  left: 40px;
+}
+.grade::after {
+  right: 40px;
+}
+/* stage */
+.stage {
+  display: none;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px 60px;
+  height: 530px;
+  margin-top: 150px;
+  transition: .5s;
+}
+.stage .stage-scene {
+  /*overflow: hidden;*/
+  padding-top: 30px;
+}
+.stage .stage-scene div {
+  width: 100%;
+  height: 3px;
+  background-color: #f2d688;
+  background: -webkit-linear-gradient(left, transparent 0%, #f2d688 12%, #f2d688 88%, transparent);
+  background: -o-linear-gradient(left, transparent 0%, #f2d688 12%, #f2d688 88%, transparent);
+  background: linear-gradient(to right, transparent 0%, #f2d688 12%, #f2d688 88%, transparent);
+  margin-bottom: 97px;
+}
+.stage .stage-scene div:nth-of-type(1) {
+  position: relative;
+  margin-bottom: 92px;
+  background-color: #e8b730;
+  background: -webkit-linear-gradient(left, transparent 0%, #e8b730 12%, #e8b730 88%, transparent);
+  background: -o-linear-gradient(left, transparent 0%, #e8b730 12%, #e8b730 88%, transparent);
+  background: linear-gradient(to right, transparent 0%, #e8b730 12%, #e8b730 88%, transparent);
+}
+.stage .stage-scene div:nth-of-type(1) .tree {
+  position: absolute;
+  top: -50px;
+  left: 102%;
+  width: 50px;
+  height: 50px;
+  background: url(../imgs/tree.png) no-repeat 0 0;
+}
+.stage .stage-eggs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 60px;
+  /*background-color: red;*/
+}
+.stage .stage-eggs span {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 100%;
+}
+.stage .stage-eggs span.egg-green {
+  top: 300px;
+  background: url(../imgs/egg-green.png) no-repeat 0 0/100px;
+}
+.stage .stage-eggs span.egg-white {
+  top: 100px;
+  background: url(../imgs/egg-white.png) no-repeat 0 0/100px;
+}
+.stage .stage-eggs span.egg-golden {
+  top: 200px;
+  background: url(../imgs/egg-golden.png) no-repeat 0 0/100px;
+}
+.stage .rd-rabbit {
+  position: absolute;
+  left: 100px;
+  top: 93px;
+  width: 167px;
+  height: 155px;
+  background: url(../imgs/pst-img/ready-rabbit.png) no-repeat 0 center;
+  z-index: 3;
+}
+.stage .rd-number {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  text-align: center;
+  line-height: 300px;
+  font-size: 140px;
+  width: 300px;
+  color: #fff;
+  font-weight: bold;
+  transform: translateX(-50%);
+}
+.stage .rd-biddy {
+  position: absolute;
+  top: -142px;
+  left: 257px;
+  width: 254px;
+  height: 256px;
+  background: url(../imgs/pst-img/ready-biddy.png) no-repeat 0 0;
+  z-index: 3;
+}
+.stage .go {
+  display: none;
+  position: absolute;
+  top: -10px;
+  left: 100px;
+  width: 324px;
+  height: 256px;
+  background: url(../imgs/pst-img/rabbit-run.png) no-repeat 0 0;
+  z-index: 4;  
+}
+.stage .over {
+  display: none;
+  position: absolute;
+  /*top: 20px;*/
+  /*left: 300px;*/
+  width: 127px;
+  height: 256px;
+  background: url(../imgs/pst-img/babbit_dazed.png) no-repeat 0 0;
+  z-index: 3;
+}
+/*gradient(left, #ecc455 0%, rgba(236, 196, 85, 0) 100%);*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
