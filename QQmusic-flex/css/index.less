@@ -1,0 +1,251 @@
+@color: #31c27c;
+.col_center{
+	display: flex;
+	align-items: center;
+}
+.row_center{
+	display: flex;
+    justify-content: center;
+}
+.row_rv{
+	display: flex;
+	justify-content: space-between;
+}
+.text_ov{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+html{
+	height: 100%;
+	overflow: hidden;
+}
+body{
+	font: 0.38rem 'Microsoft Yahei';
+	color: #000;
+	background-color: #f4f4f4;
+	height: 100%;
+	overflow-y: auto;
+}
+.head{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 5;
+}
+.hd_top{
+	height: 1.32rem;
+	background-color: @color;
+	.col_center;
+	justify-content: space-between;
+	padding: 0 0.3rem;
+	h1{
+		width: 2.7rem;
+		padding-top: 0.75rem;
+		height: 0;
+		overflow: hidden;
+		background: url(../img/logo.png) no-repeat left top/100%;
+	}
+	.down_app{
+		color: #fff;
+		padding: 0.08rem 0.25rem;
+		background-color: #26a969;
+		border-radius: 0.33rem;
+	}
+}
+.main_nav{
+	display: flex;
+	background-color: #fff;
+	a{
+		flex: 1;
+		font-size: 0.44rem;
+		line-height: 1.14rem;
+		color: #666;
+		text-align: center;
+		border-bottom: 0.06rem solid #fff;
+	}
+	.act_link{
+		color: @color;
+		border-color: @color;
+	}
+}
+.main{
+	padding-top: 2.52rem;
+}
+.main .banner{
+    position: relative;
+    overflow: hidden;
+    .pic_box{
+    	width: 200%;
+    	animation: move 3s infinite;
+    }
+    .pic_wrap{
+		width: 50%;
+		height: 4.32rem;
+		overflow: hidden;
+		img{
+			width: 100%;
+		}
+	}
+	@keyframes move{
+		0%{
+			transform: translate(0);
+		}
+		50%{
+			transform: translate(-50%);
+		}
+		100%{
+			transform: translate(-50%);
+		}
+	}
+}
+.dot_box{
+	.row_center;
+	position: absolute;
+	bottom: 0.33rem;
+	width: 100%;
+	.dot_wrap{
+		a{
+			width: 0.18rem;
+			height: 0.18rem;
+			background-color: rgba(0,0,0, .5);
+			border-radius: 0.09rem;
+			margin-right: 0.24rem;
+		}
+		.act_dot{
+			background-color: rgba(255,255,255, .5);
+		}
+		a:last-child{
+			margin-right: 0;
+		}
+	}
+}
+.main_item{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 0.3rem;
+	header{
+		height: 1.46rem;
+		.col_center;
+		h3{
+			font-size: 0.44rem;
+			line-height: 0.84rem;
+		}
+	}
+	.con_list{
+		.row_rv;
+		flex-wrap: wrap;
+		.item{
+			position: relative;
+			width: 4.98rem;
+			margin-bottom: 0.3rem;
+			.pic_wrap{
+				position: relative;
+				width: 4.98rem;
+				height: 4.98rem;
+				overflow: hidden;
+				img{
+					width: 100%;
+				}
+				.lis_num{
+					position: absolute;
+					left: 0.15rem;
+					bottom: 0.22rem;
+					font-size: 0.32rem;
+					line-height: 0.34rem;
+					color: #fff;
+					padding-left: 0.48rem;
+					background: url(../img/ico_listen.png) no-repeat left top/0.3rem 0.27rem;
+				}
+				.ico_on{
+					position: absolute;
+					right: 0.15rem;
+					bottom: 0.15rem;
+					width: 0.65rem;
+					height: 0.65rem;
+					border: 0.04rem solid #fff;
+					background-color: rgba(0,0,0, .7);
+					display: flex;
+					align-items: center;
+					border-radius: 0.35rem;
+					em{
+						border: 0.12rem solid transparent;
+						border-left-color: #fff;
+						margin-left: 0.32rem;
+						transform: scaleX(1.5);
+					}
+				}
+				.ad_rec{
+					position: absolute;
+					top: 0.24rem;
+					left: 0;
+					display: flex;
+					height: 0.8rem;
+					width: 1.5rem;
+					line-height: 0.40rem;
+					color: #fff;
+					background-color: @color;
+					font-size: 0.3rem;
+					transform: rotate(-45deg);
+					transform-origin: left bottom;
+					align-items: flex-end;
+					justify-content: center;
+				}
+			}
+			.it_info{
+				padding-top: 0.08rem;
+				padding-left: 0.22rem;
+				height: 1.30rem;
+				background-color: #fff;
+				line-height: 0.58rem;
+				strong, span{
+					display: block;
+					width: 100%;
+					.text_ov;
+				}
+				span{
+					font-size: 0.32rem;
+				}
+			}
+			.a_cv{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+}
+.main_bt{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	height: 1.1rem;
+	color: #626262;
+	font-size: 0.4rem;
+}
+.footer{
+	padding: 0.4rem;
+	text-align: center;
+	.pc_link{
+		line-height: 0.72rem;
+		margin-bottom: 0.24rem;
+		color: #000;
+		display: block;
+	}
+	.fo_logo{
+		width: 2.45rem;
+		height: 0.7rem;
+		display: inline-block;
+		vertical-align: top;
+		background: url(../img/ft_logo.png) no-repeat left top/100%;
+		margin-bottom: 0.22rem;
+	}
+	.fo_cp{
+		font-size: 0.24rem;
+		color: #7a7a7a;
+	}
+}
