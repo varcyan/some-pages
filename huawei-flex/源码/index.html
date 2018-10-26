@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/tools.css" />
+		<link rel="stylesheet" href="css/global.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<!-- 引入less.js -->
+		<script src="js/less.js"></script>
+		<!-- 移动端处理 -->
+		<script>
+			//视口设置
+			var num = 1 / window.devicePixelRatio;
+			document.write('<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale='+num+',minimum-scale='+num+',maximum-scale='+num+'" />');
+			//设置适配html字号
+			var fontNum = document.documentElement.clientWidth / 10.8;
+			var html = document.getElementsByTagName('html')[0];
+			html.style.fontSize = fontNum + 'px';
+		</script>
+	</head>
+	<body>
+		<!-- header -->
+		<header class="header">
+			<!-- logo -->
+			<h1>华为</h1>
+			<!-- 搜索 -->
+			<form>
+				<input type="text" placeholder="搜索..." />
+			</form>
+			<!-- 快捷入口 -->
+			<div class="hd_link">
+				<a class="link_car" href="">购物车</a>
+				<a class="link_logoin" href="">登陆</a>
+			</div>
+		</header>
+		<!-- main -->
+		<section class="main">
+			<!-- 首屏推荐 -->
+			<div class="main_fir">
+				<!-- banner -->
+				<div class="banner">
+					<div class="ban_wrap">
+						<a class="pic_wrap" href="">
+							<img src="img/banner.jpg" />
+						</a>
+						<a class="pic_wrap" href="">
+							<img src="img/banner.jpg" />
+						</a>
+					</div>
+					<div class="dot_wrap">
+						<a class="fl" href=""></a>
+						<a class="fl" href=""></a>
+						<a class="fl dot_act" href=""></a>
+						<a class="fl" href=""></a>
+						<a class="fl" href=""></a>
+						<a class="fl" href=""></a>
+					</div>
+				</div>
+				<!-- 推荐 -->
+				<ul class="recom">
+					<li class="recom_item">
+						<a class="cv_a" href=""></a>
+						<div class="rec_info">
+							<strong>Mate 9 Pro</strong>
+							<span>4699元起</span>
+						</div>
+						<div class="pic_wrap">
+							<span class="i_new i_ico">首发</span>
+							<img src="img/rc1.jpg" />
+						</div>
+					</li>
+					<li class="recom_item">
+						<a class="cv_a" href=""></a>
+						<div class="rec_info">
+							<strong>荣耀8</strong>
+							<span>最高直降100元</span>
+						</div>
+						<div class="pic_wrap">
+							<img src="img/rc2.jpg" />
+						</div>
+					</li>
+					<li class="recom_item">
+						<a class="cv_a" href=""></a>
+						<div class="rec_info">
+							<strong>荣耀V8</strong>
+							<span>2099元起</span>
+						</div>
+						<div class="pic_wrap">
+							<span class="i_new i_ico">首发</span>
+							<img src="img/rc3.jpg" />
+						</div>
+					</li>
+					<li class="recom_item">
+						<a class="cv_a" href=""></a>
+						<div class="rec_info">
+							<strong>HUAWEI Mate 9</strong>
+							<span>保时捷设计</span>
+						</div>
+						<div class="pic_wrap">
+							<span class="i_new i_ico">首发</span>
+							<img src="img/rc4.jpg" />
+						</div>
+					</li>
+					<li class="recom_item">
+						<a class="cv_a" href=""></a>
+						<div class="rec_info">
+							<strong>荣耀畅玩</strong>
+							<span>千元旗舰</span>
+						</div>
+						<div class="pic_wrap">
+							<img src="img/rc5.jpg" />
+						</div>
+					</li>
+					<li class="recom_item">
+						<a class="cv_a" href=""></a>
+						<div class="rec_info">
+							<strong>HUAWEI Mate 9</strong>
+							<span>3399元起</span>
+						</div>
+						<div class="pic_wrap">
+							<img src="img/rc4.jpg" />
+						</div>
+					</li>
+					<li class="recom_item">
+						<a class="cv_a" href=""></a>
+						<div class="rec_info">
+							<strong>Mate 9 Pro</strong>
+							<span>4699元起</span>
+						</div>
+						<div class="pic_wrap">
+							<img src="img/rc1.jpg" />
+						</div>
+					</li>
+					<li class="recom_item">
+						<a class="cv_a" href=""></a>
+						<div class="rec_info">
+							<strong>Mate 9 Pro</strong>
+							<span>4699元起</span>
+						</div>
+						<div class="pic_wrap">
+							<span class="i_new i_ico">首发</span>
+							<img src="img/rc2.jpg" />
+						</div>
+					</li>
+				</ul>
+				<!-- 快捷入口 -->
+				<div class="shot">
+					<ul class="shot_list">
+						<li class="shot_item">
+							<a href="">特权频道</a>
+						</li>
+						<li class="shot_item">
+							<a href="">特权频道</a>
+						</li>
+						<li class="shot_item">
+							<a href="">特权频道</a>
+						</li>
+						<li class="shot_item">
+							<a href="">特权频道</a>
+						</li>
+						<li class="shot_item">
+							<a href="">特权频道</a>
+						</li>
+					</ul>
+					<div class="news">
+						<h3>公告</h3>
+						<a class="news_link" href="">华为畅想6S震撼上市</a>
+					</div>
+				</div>
+			</div>
+			<!-- 精品推荐 -->
+			<div class="product pro_3">
+				<header>
+					<h3>精品推荐</h3>
+				</header>
+				<div class="pro-con">
+					<a class="ad_wrap" href="">
+						<img src="img/ad1.jpg" />
+					</a>
+					<ul class="recom">
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_hot i_ico">爆款</span>
+								<img src="img/prc1.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>荣耀8</strong>
+								<span>领券减100元</span>
+								<span class="price">￥1999</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_fir i_ico">首发</span>
+								<img src="img/prc2.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>华为畅享6S</strong>
+								<span>截至24日全款预订</span>
+								<span class="price">￥1499</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/prc3.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>HUAWEI P9 Plus</strong>
+								<span>购机送好礼</span>
+								<span class="price">￥3988</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_hot i_ico">热卖</span>
+								<img src="img/prc4.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>荣耀 NOTE 8</strong>
+								<span>2K大屏长续航</span>
+								<span class="price">￥2499</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_down i_ico">直降</span>
+								<img src="img/prc5.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>Mate 9 Pro</strong>
+								<span>4699元起</span>
+								<span class="price">￥1999</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/prc6.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>HUAWEI P9</strong>
+								<span>华为徕卡 联合设计</span>
+								<span class="price">￥3388</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_down i_ico">直降</span>
+								<img src="img/prc7.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>华为畅玩5C</strong>
+								<span>真芯长续航</span>
+								<span class="price">￥1099</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/prc8.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>华为路由 A1 Lite</strong>
+								<span>双千兆无线路由</span>
+								<span class="price">￥149</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/prc9.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>荣耀手表 S1</strong>
+								<span>实时心率监测</span>
+								<span class="price">￥649</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/prc6.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>HUAWEI P9</strong>
+								<span>华为徕卡 联合设计</span>
+								<span class="price">￥3388</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_fir i_ico">首发</span>
+								<img src="img/prc2.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>华为畅享6S</strong>
+								<span>截至24日全款预订</span>
+								<span class="price">￥1499</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/prc3.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>HUAWEI P9 Plus</strong>
+								<span>购机送好礼</span>
+								<span class="price">￥3988</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 笔记本&平板 -->
+			<div class="product pro_2 pro_b_2">
+				<header>
+					<h3>笔记本＆平板</h3>
+				</header>
+				<div class="pro-con">
+					<a class="ad_wrap" href="">
+						<img src="img/ad2.jpg" />
+					</a>
+					<ul class="recom">
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_hot i_ico">热卖</span>
+								<img src="img/p2_1.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>华为平板 M3</strong>
+								<span>2K高清屏 HI-FI音效</span>
+								<span class="price">￥2288</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_hot i_ico">热卖</span>
+								<img src="img/p2_2.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>荣耀平板2</strong>
+								<span>八核强劲芯片 3GB大内存</span>
+								<span class="price">￥999</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/p2_3.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>华为 M2 8英寸平板电脑</strong>
+								<span>哈曼卡顿音效 麒麟930</span>
+								<span class="price">￥1288</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/p2_4.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>荣耀畅玩平板</strong>
+								<span>LTE版新品 双4G通话</span>
+								<span class="price">￥759</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/p2_5.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>华为 M2 10.0平板电脑</strong>
+								<span>指纹识别芯片 高清拍照</span>
+								<span class="price">￥2288</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/p2_6.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>华为M2 青春版7.0英寸</strong>
+								<span>高清大屏 侧边指纹</span>
+								<span class="price">￥1599</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/p2_7.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>华为M2 青春版 10.1英寸</strong>
+								<span>出色续航 纯净音质</span>
+								<span class="price">￥1899</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/p2_8.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>华为 M2 青春版10.1英寸</strong>
+								<span>出色续航 纯净音质</span>
+								<span class="price">￥1899</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 智能穿戴 -->
+			<div class="product pro_2 pro_b_2">
+				<header>
+					<h3>智能穿戴</h3>
+				</header>
+				<div class="pro-con">
+					<a class="ad_wrap" href="">
+						<img src="img/ad3.jpg" />
+					</a>
+					<ul class="recom">
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/p2.1.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>华为手环 B3</strong>
+								<span>腕上私语 动静随心</span>
+								<span class="price">￥999</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_hot i_ico">热卖</span>
+								<img src="img/p2.2.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>荣耀手表 S1</strong>
+								<span>实时心率监测 科学运动指导</span>
+								<span class="price">￥649</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/p2.3.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>华为手环zero</strong>
+								<span>严苛防水设计 运动无极限</span>
+								<span class="price">￥319</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/p2.4.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>华为儿童手表</strong>
+								<span>12.12-1.31 评价送话费</span>
+								<span class="price">￥688</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/p2.5.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>华为手环 B2</strong>
+								<span>腕上私语 言行合一</span>
+								<span class="price">￥799</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/p2.6.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>HUAWEI WATCH</strong>
+								<span>运动健康 语音服务 信息助手</span>
+								<span class="price">￥3288</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 智能家居 -->
+			<div class="product pro_2 pro_b_2">
+				<header>
+					<h3>智能家居</h3>
+				</header>
+				<div class="pro-con">
+					<a class="ad_wrap" href="">
+						<img src="img/ad4.jpg" />
+					</a>
+					<ul class="recom">
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_hot i_ico">热卖</span>
+								<img src="img/p2-1.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>华为路由 Q1</strong>
+								<span>创新子母路由 信号覆盖无忧</span>
+								<span class="price">￥599</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/p2-2.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>荣耀WiFi穿强宝</strong>
+								<span>插座变热点 信号变满格</span>
+								<span class="price">￥268</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/p2-3.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>华为盒子</strong>
+								<span>海量免费影视 4K输出</span>
+								<span class="price">￥349</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/p2-4.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>华为路由 WS832</strong>
+								<span>1200M无线路由器</span>
+								<span class="price">￥249</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/p2-5.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>荣耀路由标准版</strong>
+								<span>双频WiFi 传输不卡顿</span>
+								<span class="price">￥158</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/p2-6.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>华为随性WiFi Pro</strong>
+								<span>国内4G三网通</span>
+								<span class="price">￥799</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/p2-7.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>荣耀盒子vioce</strong>
+								<span>4K画质 海量影视</span>
+								<span class="price">￥198</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/p2-8.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>荣耀盒子 标准版</strong>
+								<span>4核专业媒体芯片</span>
+								<span class="price">￥228</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 热销配件 -->
+			<div class="product pro_2 pro_s_2">
+				<header>
+					<h3>热销配件</h3>
+				</header>
+				<div class="pro-con">
+					<a class="ad_wrap" href="">
+						<img src="img/ad5.jpg" />
+					</a>
+					<ul class="recom">
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_hot i_ico">热卖</span>
+								<img src="img/pro1.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>BoradLink WiFi智能插座</strong>
+								<span>远程控制 一键开关</span>
+								<span class="price">￥59</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_newn i_ico">新品</span>
+								<img src="img/pro2.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>耐翔 手机扩容U盘</strong>
+								<span>轻松扩容 高效传输</span>
+								<span class="price">￥5 99</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/pro3.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>耐翔 手机扩容U盘</strong>
+								<span>轻松扩容 高效传输</span>
+								<span class="price">￥69</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/pro4.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>耐翔 车载空气净化器</strong>
+								<span>净化车内空气 即插即用</span>
+								<span class="price">￥99</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/pro5.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>缤特力 商务蓝牙耳机</strong>
+								<span>智能语音控制 释放双手</span>
+								<span class="price">￥498</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/pro1.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>锐利 WIFI云端摄像笔</strong>
+								<span>书写录像两不误</span>
+								<span class="price">￥299</span>
+							</div>
+						</li>
+					</ul>
+					<a class="ad_wrap" href="">
+						<span class="ad_down">直降</span>
+						<img src="img/ad6.jpg" />
+					</a>
+					<ul class="recom">
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_hot i_ico">热卖</span>
+								<img src="img/pr1.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>荣耀1000mAh 移动电源</strong>
+								<span>匠心工艺 多重防护</span>
+								<span class="price">￥129</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_newn i_ico">新品</span>
+								<img src="img/pr2.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>HUAWEI VR眼镜</strong>
+								<span>改变视界</span>
+								<span class="price">￥5 99</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/pr3.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>耐翔 手机扩容U盘</strong>
+								<span>轻松扩容 高效传输</span>
+								<span class="price">￥69</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/pr4.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>耐翔 车载空气净化器</strong>
+								<span>净化车内空气 即插即用</span>
+								<span class="price">￥99</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/pr5.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>华为排插 快充版</strong>
+								<span>9V快充 3C认证</span>
+								<span class="price">￥149</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/pr6.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>华为 9V2A手机充电器</strong>
+								<span>高速快充 18W大功率</span>
+								<span class="price">￥69</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/pr7.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>华为MA116耳机</strong>
+								<span>佩戴舒适 清晰时光</span>
+								<span class="price">￥89</span>
+							</div>
+						</li>
+						<li class="recom_item">
+							<a class="cv_a" href=""></a>
+							<div class="pic_wrap">
+								<span class="i_ico"></span>
+								<img src="img/pr8.jpg" />
+							</div>
+							<div class="rec_info">
+								<strong>华为 小天鹅蓝牙音箱</strong>
+								<span>形如天鹅 引入天籁</span>
+								<span class="price">￥109</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- base -->
+		<ul class="base">
+			<li class="base_item">
+				<a href="">首页</a>
+			</li>
+			<li class="base_item">
+				<a href="">华为</a>
+			</li>
+			<li class="base_item">
+				<a href="">荣耀</a>
+			</li>
+			<li class="base_item">
+				<a href="">分类</a>
+			</li>
+			<li class="base_item">
+				<a href="">我的</a>
+			</li>
+		</ul>
+		<!-- footer -->
+		<footer>
+			<div class="fo_shot">
+				<a href="">登陆</a>
+				<a href="">反馈</a>
+			</div>
+			<div class="fo_type">
+				<a class="act_link" href="">触频版</a>
+				<span class="line"></span>
+				<a href="">电脑版</a>
+				<span class="line"></span>
+				<a href="">客户端</a>
+			</div>
+			<div class="cpr">Copyright © 2011-2016</div>
+		</footer>
+	</body>
+</html>
