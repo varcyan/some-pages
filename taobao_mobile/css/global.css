@@ -1,0 +1,138 @@
+html{
+	height: 100%;
+	overflow: hidden;
+}
+body{
+	height: 100%;
+	width: 100%;
+	overflow-y: auto;
+	font: 0.24rem 'Microsoft Yahei';
+	color: #333;
+}
+a{
+	color: #6c6c6c;
+}
+.header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3 ;
+	width: 100%;
+	height: 0.88rem;
+	background-color: #ff5000;
+}
+.main{
+	margin-top: 0.88rem;
+	padding-bottom: 0.99rem;
+	overflow: hidden;
+}
+.base{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.98rem;
+	background-color: #ffffff;
+	border-top: 1px solid rgba(0,0,0, .5);
+}
+.header .head_cm{
+	text-align: center;
+}
+.header .head_scan{
+	width: 1.06rem;
+	height: 100%;
+}
+.header .head_msg{
+	width: 1.04rem;
+	height: 100%;
+}
+.head_cm .ico{
+	display: block;
+	width: 100%;
+	height: 0.53rem;
+}
+.head_scan .ico{
+	background: url(../img/ico_scan.png) no-repeat center 0.08rem/0.42rem 0.4rem;
+}
+.head_msg .ico{
+	background: url(../img/ico_msg.png) no-repeat center 0.11rem/0.42rem 0.42rem;
+}
+.head_cm .ico_text{
+	display: block;
+	color: #ffebc7;
+	font-size: 0.2rem;
+	line-height: 0.2rem;
+}
+.header .head_mWrap{
+	margin-top: 0.08rem;
+	width: 4.3rem;
+}
+.header .head_form{
+	position: relative;
+	margin: 0 auto;
+	width: 2.66rem;
+	height: 0.64rem;
+	padding-left: 0.52rem;
+	padding-right: 0.58rem;
+	border-radius: 0.04rem;
+}
+.head_form input{
+	width: 100%;
+	height: 100%;
+	font-size: 0.3rem;
+	font-family: 'Microsoft Yahei';
+	height: 0.64rem;
+	color: #fff;
+}
+.head_form, .head_form input{
+	background-color: #d42d00;
+}
+.head_form .ico_serch{
+	position: absolute;
+	left: 0.18rem;
+	top: 0.17rem;
+	width: 0.28rem;
+	height: 0.28rem;
+	background: url(../img/ico_search.png) no-repeat;
+	background-size: 100% 100%;
+}
+.head_form .ico_camera{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 0.58rem;
+	height: 100%;
+	background: url(../img/ico_camera.png) no-repeat 0.07rem 0.16rem/0.34rem 0.31rem;
+}
+.base .base_opt{
+	width: 20%;
+	padding-top: 0.18rem;
+	height: 0.8rem;
+	text-align: center;
+	color: #706f74;
+	font-size: 0.20rem;
+	line-height: 0.32rem;
+}
+.base_opt .ico{
+	display: block;
+	height: 0.48rem;
+	width: 100%;
+}
+.base_opt .base_text{
+	display: block;
+}
+.base_index .ico{
+	background: url(../img/ico_index.png) no-repeat center 0/0.5rem 0.45rem;
+}
+.base_share .ico{
+	background: url(../img/ico_share.png) no-repeat center 0.05rem/0.44rem 0.36rem;
+}
+.base_ask .ico{
+	background: url(../img/ico_ask.png) no-repeat center 0.02rem/0.41rem 0.41rem;
+}
+.base_car .ico{
+	background: url(../img/ico_car.png) no-repeat center 0.02rem/0.42rem 0.42rem;
+}
+.base_user .ico{
+	background: url(../img/ico_user.png) no-repeat center 0.05rem/0.36rem 0.39rem;
+}
