@@ -1,0 +1,18 @@
+/* tools */
+body{
+	font: 14px arial;
+}
+a{
+	color: #b24926;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}

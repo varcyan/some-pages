@@ -1,0 +1,141 @@
+/* 大分辨率（PC分辨率、TV） */
+@media all and (min-width:1200px){
+	
+}
+/* 小于 */
+/* 中等分辨率（PC小分辨率 || pad） */
+@media all and (max-width:980px){
+	.fo_bt{
+		text-align: center;
+	}
+	.fo_bt .fo_r{
+		float: none;
+		display: inline-block;
+	}
+	.fo_bt .fo_l{
+		float: none;
+		width: auto;
+		display: inline-block;
+	}
+}
+@media all and (min-width:700px) and (max-width:917px){}
+@media all and (max-width:917px){
+	.major_con .con_brief{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.con_brief .down_wrap{
+		width: 100%;
+		padding-top: 0;
+		order: 1;
+		margin-bottom: 20px;
+	}
+	.down_text .down_main{
+		padding-left: 0;
+	}
+	.con_brief .bri_list{
+		width: 100%;
+		order: 2;
+	}
+	.main .support{
+		display: none;
+	}
+}
+@media all and (max-width:768px){
+	.head .shot_nav{
+		display: none;
+	}
+	.head .page_nav{
+		float: left;
+	}
+	.bri_list .bri_item{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.con_intro .intro_info{
+		width: 100%;
+	}
+	.con_intro .intro_res{
+		float: none;
+		width: 50%;
+		padding-left: 0;
+	}
+	.con_wrap .con_intro{
+		padding-bottom: 20px;
+	}
+	.info_con .pro_pic{
+		width: 100%;
+	}
+	.pic_box .pic_wrap{
+		display: block;
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	.pic_box .pic_wrap img{
+		height: 100%;
+		width: auto;
+	}
+	.cod_wrap .con_text{
+		/*width: 95%;*/
+	}
+}
+@media all and (max-width:600px){
+	.main .main_con{
+		border-top: none;
+		box-shadow: none;
+	}
+	.main_head{
+		text-align: center;
+	}
+	.main .logo{
+		float: none;
+		display: inline-block;
+	}
+	.major_con{
+		border-radius: 8px 8px 0 0;
+		overflow: hidden;
+	}
+	.major_head_d{
+		display: block;
+	}
+	.main_con .major_head{
+		background-color: transparent;
+	}
+	.major_head .major_nav{
+		width: 100%;
+		padding: 0;
+	}
+	.major_nav .nav_link{
+		margin: 0 5px;
+	}
+	.major_head .major_search{
+		width: 100%;
+		margin-top: 0;
+		background-color: #0769ad;
+	}
+	.major_search input{
+		background-color: #0769ad;
+	}
+	.footer .recome{
+		width: 100%;
+		padding: 0 20px;
+	}
+	.rec_list .rec_item{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+}
+@media all and (max-width:479px){
+	.head{
+		display: none;
+	}
+	.main{
+		padding: 0 10px;
+	}
+	.major_head .nav_sel{
+		display: block;
+	}
+	.major_head .major_nav{
+		display: none;
+	}
+}

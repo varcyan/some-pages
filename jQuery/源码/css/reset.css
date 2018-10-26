@@ -1,0 +1,22 @@
+/* reset css */
+body, h1, h3, h4, p{
+	margin: 0;
+}
+ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+form{
+	margin: 0;
+	padding: 0;
+}
+input{
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+}
