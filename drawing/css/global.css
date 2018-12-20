@@ -1,0 +1,38 @@
+html,body {
+	height: 100%;
+}
+body {
+	font: 14px arial,"Microsoft Yahei";
+	overflow: hidden;
+}
+/* footer */
+.footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 46px;
+	background-color: #f1f1f1;
+}
+.footer dl {
+	display: flex;
+	line-height: 46px;
+	justify-content: center;
+}
+.footer dl dd {
+	position: relative;
+	padding-left: 28px;
+}
+.footer dl dd::before {
+	content: '';
+	position: absolute;
+	top: 15px;
+	left: 10px;
+	width: 12px;
+	height: 12px;
+	background-color: #000;
+}
+.footer a {
+	color: #555;
+	display: block;
+}

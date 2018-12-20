@@ -1,0 +1,170 @@
+/* head */
+.head {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	padding-left: 50px;
+	padding-top: 15px;
+	line-height: 70px;
+	z-index: 5;
+}
+.head h1 {
+  font-size: 16px;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+.head .hd-nav {
+	display: flex;
+}
+.head .hd-nav a {
+	color: #c3c3c3;
+	padding: 0 8px;
+}
+.head .hd-nav a:hover,.head .hd-nav a.active {
+	color: #555;
+}
+.head .hd-nav a:not(:last-child) {
+	margin-right: 6px;
+}
+/* main */
+.main {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding-top: 85px;
+	padding-bottom: 42px;
+	box-sizing: border-box;
+}
+/* robot */
+#robot {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+/* airport */
+.main #airport {
+	position: relative;
+	z-index: 6;
+	float: left;
+	height: 83px;
+	width: 175px;
+	animation: jobFly 75s infinite linear;
+}
+@keyframes jobFly {
+	0% {
+		margin-left: -173px;
+	}
+	100% {
+		margin-left: 400%;
+	}
+}
+/* animate */
+/*path,polyline { 
+	stroke-dasharray: 400; 
+	stroke-dashoffset: 400; 
+	animation: dash 3s linear infinite; 
+} 
+@keyframes dash { 
+	to { stroke-dashoffset: 0; } 
+}*/
+/* views */
+.main .views {
+	position: absolute;
+	left: 0;
+	top: 85px;
+	width: 400%;
+	height: calc(100% - 127px);
+	padding-top: 87px;
+	box-sizing: border-box;
+}
+.views .view {
+	position: relative;
+	float: left;
+	width: 25%;
+	height: 70%;
+}
+.view .content {
+	position: relative;
+	width: 960px;
+	height: 100%;
+	margin: 0 auto;
+}
+/* painter */
+.view .painter svg, .view .painter img {
+	position: absolute;
+}
+.view .painter .p-show {
+	bottom: -3px;
+	left: 40px;
+}
+#tower {
+	right: 100px;
+	bottom: -3px;
+}
+#pensil {
+	position: absolute;
+	bottom: 0;
+	left: 300px;
+}
+/* line */
+.view .line {
+	height: 3px;
+	background-color: #000;
+}
+.view:not(:last-child) .line {
+	width: 100%;
+}
+.view:last-child .line {
+	position: relative;
+	width: 300px;
+}
+/* info */
+.view .content .info {
+	float: right;
+	width: 535px;
+}
+/* info-text */
+.view .info .info-text {
+	position: relative;
+	color: #ccc;
+	font-size: 16px;
+	letter-spacing: 1px;
+	line-height: 28px;
+	margin-bottom: 30px;
+}
+.view .info .info-text::before {
+	content: "\“";
+	font-size: 80px;
+	position: absolute;
+	left: -42px;
+	top: 0px;
+	/*font-family: "Microsoft Yahei";*/
+}
+.info-text strong{
+	color: #555;
+	font-style: normal;
+}
+/* info-list */
+.view .info .info-list {
+	padding: 18px 12px;
+	background-color: #f5f5f5;
+	counter-reset: line;
+	border-radius: 3px;
+	font-family: consolas;
+}
+.view .info-list li {
+	line-height: 26px;
+	color: #555;
+}
+.view .info-list li:before {
+	content: counter(line);
+	counter-increment: line;
+	color: #8e8e8e;
+	margin-right: 16px;
+	margin-left: 10px;
+}
+.view .info-list li .user{
+	color: #8e8e8e;
+	margin-right: 3px;
+}

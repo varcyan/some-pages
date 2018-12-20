@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <style>
+    #test {
+      width: 500px;
+      height: 500px;
+    }
+  </style>
+  <script src="js/snap-svg-min.js"></script>
+</head>
+<body>
+  <section>
+    <svg id="test">
+      
+    </svg>
+  </section>
+  <script>
+    // 获取元素 包装成snap元素
+    var s = Snap('#test');
+    console.log(s);
+    
+    // 画一个圆 （x, y, r）
+    var sCir = s.circle(100,100,50);  
+    // 给圆添加属性
+    sCir.attr({
+      stroke: '#000',
+      strokeWidth: 2
+    })
+    
+    // 画一个路径
+    var p = s.path("M110,95,95,110M115,100,100,115").attr({
+        fill: "none",
+        stroke: "#bada55",
+        strokeWidth: 4
+    });
+    
+    // 一个矩形
+    var cut = s.rect(100, 100, 10, 10).attr({fill: "#fff", opacity: .5});
+    // 移除
+    cut.remove();
+    
+    // pattern 似乎把p遮住了
+    var pt = p.pattern(100, 100, 10, 10);  
+    sCir.attr({
+      fill: pt
+    })
+    p.animate({strokeWidth: 1, stroke: "#FF4136"}, 2000);
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
